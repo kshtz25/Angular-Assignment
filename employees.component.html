@@ -1,0 +1,22 @@
+<div class="container" style="text-align: center;background-color:ghostwhite;height: 600px;max-width: 700px;margin-block-start: 40px">
+<h1 style="text-align:center">Device Optimum Utilization</h1>
+<div id="searchContainer" style="text-align: center;margin-top: 20px">
+  <input type="text" name="search" class="btn btn--primary" placeholder="Enter Details....." #search>
+  <button type="button" class="btn btn--primary" (click)="searchEmployee(search)" style="background-color: lightskyblue" >Search</button>
+</div>
+<div class="col-md-6 container" style="background-color:lightcyan;margin-top: 20px">
+  <p style="font-size: 20px;font-weight: bold">Probable Suggestion</p>
+  <table class="table table-striped">
+  <tbody>
+      <tr *ngFor="let employee of employees">
+          <td>{{employee.name}}</td>
+          <br><td>{{employee.id}}</td>
+          <br><td>{{employee.salary}}</td>
+          </tr>
+    
+  </tbody>
+  
+    </table>
+
+  </div>
+</div>
